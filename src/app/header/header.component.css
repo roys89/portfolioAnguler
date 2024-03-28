@@ -1,0 +1,8 @@
+.jumbotron {
+  padding: 2rem 1rem;
+  background-image: url('../../assets/header-back.jpg'); /* Replace 'path/to/your/image.jpg' with the URL or path to your image */
+  background-size: cover; /* Scale the background image to cover the entire body */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat;
+  color: aliceblue;
+}

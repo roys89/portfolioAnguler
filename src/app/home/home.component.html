@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="card col-lg shadow border m-1">
+      <div class="text-center">
+
+        <div class="inner-container"></div>
+
+        <h2>About Me</h2>
+        <img src="../../assets/new.png" alt="profile picture" width="256" height="256" class="rounded-circle">
+        <p>As a Full Stack Developer, my portfolio showcases a diverse range of projects that demonstrate my proficiency in HTML, CSS, and Bootstrap for front-end development, ensuring responsive and visually appealing designs. My back-end expertise is highlighted by my use of PHP, Java, and the Java Spring Framework, allowing me to build robust server-side applications. I am adept at JavaScript and AngularJS, creating dynamic user experiences and single-page applications with seamless functionality.
+
+          My skills extend to database management with MySQL, ensuring efficient data storage and retrieval. My foundational knowledge in C and C++ empowers me to tackle system-level programming challenges, contributing to my versatility as a developer. I am committed to writing clean, maintainable code, and my portfolio is a reflection of my dedication to delivering high-quality software solutions that meet the evolving needs of the industry.</p>
+      </div>
+    </div>
+
+    <div class="card col-lg shadow border m-1">
+      <div class="text-center">
+        <h2>Featured project</h2>
+        <h4>{{featuredProject.projectTitle}}</h4>
+      </div>
+
+      <carousel>
+        <div *ngFor="let picture of featuredProject.picture">
+          <slide><img src="{{picture}}" alt="slide" style="display: block; width: 100%;"></slide>
+        </div>
+      </carousel>
+
+      <p class="mt-2">{{featuredProject.summary}}</p>
+      <p>Visit the portfolio section for more details.</p>
+
+    </div>
+  </div>
+</div>
