@@ -1,5 +1,140 @@
-<div class="cover ">
-  <div class="box justify-content-center">
-    <p>balta ho na</p>
+<div class="container text-center">
+  <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">
+    Download PDF
+  </button>
+
+  <div class="pb-2">
+    <accordion [isAnimated]="true" class="shadow">
+      <accordion-group [(isOpen)]="isWorkExperienceOpen">
+        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+          <div style="visibility: hidden;">></div>
+          <div class="btn-link ">Work Experience</div>
+          <div style="width: 10.95px;">
+            <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
+            <div *ngIf="isWorkExperienceOpen" style="color: white;">v</div>
+          </div>
+        </button>
+
+        <div style="text-align: left">
+          <h2 class="mb-0">Sample Type</h2>
+          <h3 class="text-primary">Sample Company</h3>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+              suscipit?
+            </li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          </ul>
+        </div>
+        <hr />
+        <div style="text-align: left">
+          <h2 class="mb-0">Sample Type</h2>
+          <h3 class="text-primary">Sample Company</h3>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+              suscipit?
+            </li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          </ul>
+        </div>
+      </accordion-group>
+
+      <accordion-group [(isOpen)]="isEducationOpen">
+        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+          <div style="visibility: hidden;">></div>
+          <div class="btn-link ">Education</div>
+          <div style="width: 10.95px;">
+            <div *ngIf="!isEducationOpen" style="color: white;">></div>
+            <div *ngIf="isEducationOpen" style="color: white;">v</div>
+          </div>
+        </button>
+
+        <div style="text-align: left">
+          <h2 class="mb-0">Sample Type</h2>
+          <h3 class="text-primary">Sample Company</h3>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+              suscipit?
+            </li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          </ul>
+        </div>
+      </accordion-group>
+
+      <accordion-group [(isOpen)]="isCertificationOpen">
+        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+          <div style="visibility: hidden;">></div>
+          <div class="btn-link ">Certifications</div>
+          <div style="width: 10.95px;">
+            <div *ngIf="!isCertificationOpen" style="color: white;">></div>
+            <div *ngIf="isCertificationOpen" style="color: white;">v</div>
+          </div>
+        </button>
+
+        <div style="text-align: left">
+          <h2 class="mb-0">Sample Type</h2>
+          <h3 class="text-primary">Sample Company</h3>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, suscipit?
+            </li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+          </ul>
+        </div>
+      </accordion-group>
+
+      <accordion-group  [(isOpen)]="isSkillsOpen">
+        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+          <div style="visibility: hidden;">></div>
+          <div class="btn-link ">Skills</div>
+          <div style="width: 10.95px;">
+            <div *ngIf="!isSkillsOpen" style="color: white;">></div>
+            <div *ngIf="isSkillsOpen" style="color: white;">v</div>
+          </div>
+        </button>
+
+        <div class="col-md" style="text-align: left">
+          <h3>Programming Languages:</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>PHP</li>
+            <li>JAVA</li>
+            <li>TYPESCRIPT</li>
+            <li>JQUERY</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>C#</li>
+            <li>SQL</li>
+            <li>PYTHON</li>
+          </ul>
+        </div>
+
+        <div class="col-md mt-4" style="text-align: left">
+          <h3>Frameworks:</h3>
+          <ul>
+            <li>Anguler</li>
+            <li>React</li>
+            <li>NODE.JS</li>
+            <li>ASP>NET</li>
+            <li>BOOTSTRAP</li>
+          </ul>
+        </div>
+
+        <div class="col-md mt-4" style="text-align: left">
+          <h3>Other Skills:</h3>
+          <ul>
+            <li>Source Control via Git</li>
+            <li>MVC Architecture</li>
+          </ul>
+        </div>
+      </accordion-group>
+    </accordion>
   </div>
 </div>
